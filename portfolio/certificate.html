@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>Document</title>
+    <!-- <style>
+        body {
+            background-color: #a43232;
+        }
+    </style> -->
+    
+</head>
+<body>
+    <div class="certifications-section">
+        <h2>My Certifications</h2>
+        <div class="certifications-grid">
+            <!-- Certificate Card -->
+            <div class="certificate-card" onclick="showCertificatePopup(this)">
+                <div class="certificate-front">
+                    <img src="drum.png" alt="Certificate Thumbnail">
+                </div>
+                <div class="certificate-back">
+                    <h3>Certificate Title</h3>
+                    <p>Issued by: Issuer Name</p>
+                    <p>Date: Issue Date</p>
+                    <p class="description">Brief description of the certificate...</p>
+                </div>
+            </div>
+            <!-- Add more certificate cards as needed -->
+        </div>
+    </div>
+    
+    <!-- Popup Modal -->
+    <div class="certificate-popup" id="certificatePopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img id="popupImage" src="" alt="Certificate Full Image">
+            <h3 id="popupTitle">Certificate Title</h3>
+            <p id="popupIssuer">Issued by: Issuer Name</p>
+            <p id="popupDate">Date: Issue Date</p>
+            <p id="popupDescription">Detailed description...</p>
+        </div>
+    </div>
+
+    <!-- Embed st.js -->
+    <script src="st.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    color: white;
+}
+body {
+    background-color: rgb(239, 239, 246);
+    overflow-x: hidden; /* Remove horizontal overflow */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+.card-cover {
+background-repeat: no-repeat; /* Prevent the background image from repeating */
+background-size: contain; /* Scale the background image to cover the entire container */
+opacity: 1; /* Adjust the transparency of the card */
+}
+
+.card-cover .text-white {
+background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color to improve text readability */
+}
+html, body {
+    height: 100%; /* Make sure the body takes full height */
+    margin: 0; /* Remove default margins */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.github-stats {
+    text-align: center;
+    padding: 50px 0;
+    background-color:#191f36; /* Dark background color */
+}
+
+.github-stats .heading {
+    color: #ffffff; /* White text color for the heading */
+}
+
+.github-stats .stats-card {
+    display: inline-block;
+    padding: 20px;
+    background-color: #333333; /* Slightly lighter dark background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.github-stats img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
